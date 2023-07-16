@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans:ital,wght@0,100;1,100&family=Palanquin:wght@100&family=Poppins:ital,wght@0,400;0,500;1,700&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background-position: center;
+  background: url(nature.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+
+.background {
+  max-width: 430px;
+  max-height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .shape {
+  max-height: 200px;
+  max-width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(#9b22ea, #bf23f6);
+  left: -80px;
+  top: -80px;
+}
+
+.shape:last-child {
+  background: linear-gradient(right, #ff512f, #f09819);
+  right: -30px;
+  bottom: -80px;
+}
+
+form:hover {
+  box-shadow: 0px 4px 8px 0px rgba(136, 179, 61, 0.2);
+}
+
+form {
+  height: 520px;
+  max-width: 430px;
+  background-color: rgba(255, 255, 255, 0.07);
+  position: absolute;
+  transform: translate(-50%, 50%);
+  bottom: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2.3px solid rgba(255, 255, 255, 0.02);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.2);
+  padding: 50px 35px;
+}
+
+form * {
+  font-family: "Poppins", sans-serif;
+  color: #ffff;
+  outline: none;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+form h3 {
+  font-size: 25px;
+
+  font-weight: 500px;
+  line-height: 42px;
+}
+form h3 span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  color: #e5e5e5;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+input {
+  display: block;
+  height: 50px;
+  min-width: 100%;
+  background-color: rgba(214, 207, 212, 0.352);
+  color: #fff;
+  padding: 12px;
+  margin: 2px;
+}
+
+input:focus{
+  background-color: rgba(35, 33, 33, 0.767);
+ border:1px solid rgb(229, 209, 209);
+}
+
+button{
+   margin-top: 80px;
+   width: 100%;
+   color: #080710;
+   font-size: 16px;
+   font-weight: 600;
+   background-color: rgb(225, 212, 212);
+   padding: 15px 0;
+   border-radius: 5px;
+ 
+}
+
+::placeholder{
+  color: white;
+}
